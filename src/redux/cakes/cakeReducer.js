@@ -10,7 +10,7 @@ const cakeReducer = (state = initialState,action) => {
         case BUY_CAKE:
             return {...state,no_of_cakes:state.no_of_cakes-1}    
         default:
-            break;
+            return state
     }
 }
 
